@@ -28,7 +28,7 @@ public class jdbcdemo6_userlogin {
         //Class.forName("com.mysql.jdbc.Driver");
         //2.获取链接
 
-        String url = "jdbc:mysql:///db1?useSSL=false";
+        String url = "jdbc:mysql:///db1?useSSL=false&allowPublicKeyRetrieval=true";
         String username = "root";
         String password = "123456";
         Connection conn = DriverManager.getConnection(url, username, password);
